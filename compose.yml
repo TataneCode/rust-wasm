@@ -1,0 +1,14 @@
+services:
+  api:
+    build:
+      context: ./crypto-api
+    ports:
+      - "8280:8080"
+
+  client:
+    build:
+      context: ./crypto-client
+    ports:
+      - "8180:80"
+    depends_on:
+      - api

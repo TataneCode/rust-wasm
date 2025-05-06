@@ -6,7 +6,8 @@ import TheWelcome from './components/TheWelcome.vue'
 <template>
   <header>
     <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />
-
+    <img alt="Cross" class="logo" src="./assets/cross-circle.svg" width="50" height="50" />
+    <img alt="Rust logo" class="logo" src="./assets/rust-logo-blk.svg" width="125" height="125" />
     <div class="wrapper">
       <HelloWorld msg="You did it!" />
     </div>

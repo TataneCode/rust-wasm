@@ -11,7 +11,7 @@ async fn main() -> std::io::Result<()> {
         App::new()
             .service(hello) // register service
     })
-        .bind("127.0.0.1:8080")? // Adress & port
+        .bind("0.0.0.0:8080")? // Adress & port
         .run()
         .await
 }

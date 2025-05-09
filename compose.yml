@@ -5,6 +5,8 @@ services:
       dockerfile: Dockerfile.vendor
     expose:
       - "8080"
+    environment:
+      - CRYPTO_SERVER_IP=0.0.0.0
 
   client:
     build:

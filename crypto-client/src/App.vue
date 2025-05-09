@@ -1,22 +1,25 @@
 <script setup lang="ts">
-import HelloWorld from './components/HelloWorld.vue'
-import TheWelcome from './components/TheWelcome.vue'
 </script>
 
 <template>
-  <header>
-    <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />
-    <img alt="Cross" class="logo" src="./assets/cross-circle.svg" width="50" height="50" />
-    <img alt="Rust logo" class="logo" src="./assets/rust-logo-blk.svg" width="125" height="125" />
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
+  <div class="page">
+    <div class="top">
+      <header>
+        <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125"/>
+        <img alt="Cross" class="logo" src="./assets/cross-circle.svg" width="50" height="50"/>
+        <img alt="Rust logo" class="logo" src="./assets/rust-logo-blk.svg" width="125"
+             height="125"/>
+      </header>
     </div>
-  </header>
+    <div class="content">
+      <main>
+        <router-view/>
+      </main>
+    </div>
+    <div class="bottom">
 
-  <main>
-    <router-view />
-  </main>
-
+    </div>
+  </div>
 </template>
 
 <style scoped>
